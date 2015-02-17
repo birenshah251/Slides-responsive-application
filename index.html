@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<!-- The application makes use of SlidesJS which is a simple slideshow plugin -->
+<head>
+  <meta charset="utf-8">
+  <title>SlidesJS Standard Code Example</title>
+  <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
+  <meta name="author" content="Nathan Searles">
+
+  <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+  <meta name="viewport" content="width=device-width">
+  <!-- End SlidesJS Required -->
+
+  <link rel="stylesheet" href="css/example.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/demo.min.css">
+</head>
+<body>
+  <!-- Nav for desktop and Tablet -->
+  <nav class="demo-nav">
+		<a class="active" href="#">Home</a><!--
+	 --><a href="#">About</a><!--
+	 --><a href="#">Efficacy</a><!--
+	 --><a href="#">Resources</a><!--
+	 --><a href="#">Contact</a><!--
+	 --><a id="menu-mobile" href="#"><hr><hr><hr><hr></a>
+  </nav>
+  <!-- End of Nav for desktop and Tablet -->
+  <!-- Nav for mobile -->
+  <nav class="demo-nav-mobile">
+		<a class="active" href="#">Home</a><!--
+	 --><a href="#">About</a><!--
+	 --><a href="#">Efficacy</a><!--
+	 --><a href="#">Resources</a><!--
+	 --><a href="#">Contact</a>
+  </nav>
+  <!-- End of Nav for mobile -->
+  <div class="container">
+    <div id="slides">
+      <img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+    </div>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p>
+  </div>
+	  
+  <div id="master-side-panel">
+	<div class="side-panel">
+		<img src="img/kiwi.svg" title="kiwi" alt="kiwi">
+		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+		<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	</div>
+	<div class="side-panel">
+		<img src="img/kiwi.svg" title="kiwi" alt="kiwi">
+		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+		<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	</div>
+  </div>
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
+</body>
+</html>
